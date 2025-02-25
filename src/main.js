@@ -26,6 +26,7 @@ setPage('home');
 
 function loadBoxPage() {
     tableNum = document.getElementById("tableNumber").value;
+    console.log("loadBoxPage");
     setPage('overview');
 }
 
