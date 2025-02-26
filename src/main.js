@@ -1,5 +1,5 @@
 import { hide, show } from "./showhide.js"; // Import the functions
-import { child, get, ref, set, runTransaction } from "firebase/database";
+// import { child, get, ref, set, runTransaction } from "firebase/database";
 import { database } from './firebaseConfig.js';
 
 let tableNum;
