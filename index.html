@@ -11,8 +11,8 @@
 
 <body>
     <div id="home">
+        <h1>Table Selection</h1>
         <label>
-            Table
             <select id="tableNumber">
                 <option value="Table 1">Table 1</option>
                 <option value="Table 2">Table 2</option>
@@ -89,6 +89,7 @@
                     stroke-width: 10;
                     stroke-miterlimit: 10;
                 }
+
                 .st1 {
                     opacity: 0.5;
                     fill: #FFFFFF;
@@ -96,6 +97,7 @@
                     stroke-width: 4;
                     stroke-miterlimit: 10;
                 }
+
                 .missing {
                     opacity: 0.3;
                     fill: #ff0000;
@@ -659,7 +661,48 @@
 </html>
 
 <style>
+    @font-face {
+        font-family: 'Interstate';
+        font-weight: normal;
+        font-style: normal;
+        src: local('Interstate'), url("/Interstate-Regular.otf") format('opentype');
+    }
+
+    @font-face {
+        font-family: 'Interstate';
+        font-style: normal;
+        font-weight: bold;
+        src: local('Interstate'), url("/Interstate-Bold.otf") format('opentype');
+    }
+
     body {
-        background-color: white;
+        font-family: "Interstate", sans-serif;
+        background-color: #121B21;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+        padding: 0;
+        margin: 0;
+    }
+
+    select,
+    button {
+        font-size: 16px;
+        color: white;
+        border: 1px solid #666;
+        border-radius: 4px;
+        padding: 4px;
+    }
+
+    :root {
+        touch-action: pan-x pan-y;
+        color-scheme: dark;
+        text-rendering: optimizeLegibility;
+    }
+    .home {
+        text-align: center;
     }
 </style>
