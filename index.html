@@ -12,26 +12,30 @@
 <body>
     <div id="home">
         <h1>Table Selection</h1>
-        <label>
-            <select id="tableNumber">
-                <option value="Table 1">Table 1</option>
-                <option value="Table 2">Table 2</option>
-                <option value="Table 3">Table 3</option>
-                <option value="Table 4">Table 4</option>
-                <option value="Table 5">Table 5</option>
-                <option value="Table 6">Table 6</option>
-                <option value="Table 7">Table 7</option>
-                <option value="Table 8">Table 8</option>
-                <option value="Table 9">Table 9</option>
-                <option value="Table 10">Table 10</option>
-            </select>
-        </label>
-        <button id="loadBoxPage">Submit</button>
+        <div class="buttonBoxHome">
+            <label>
+                <select id="tableNumber">
+                    <option value="Table 1">Table 1</option>
+                    <option value="Table 2">Table 2</option>
+                    <option value="Table 3">Table 3</option>
+                    <option value="Table 4">Table 4</option>
+                    <option value="Table 5">Table 5</option>
+                    <option value="Table 6">Table 6</option>
+                    <option value="Table 7">Table 7</option>
+                    <option value="Table 8">Table 8</option>
+                    <option value="Table 9">Table 9</option>
+                    <option value="Table 10">Table 10</option>
+                </select>
+            </label>
+            <button id="loadBoxPage">Submit</button>
+        </div>
     </div>
 
     <div id="overview" style="display:none;">
-        <button id="goHome">Back</button>
-        <button id="logTools">Submit</button>
+        <div class="buttonBox">
+            <button id="goHome">Back</button>
+            <button id="logTools">Submit</button>
+        </div>
         <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
             x="0px" y="0px" viewBox="0 0 450 300" style="enable-background:new 0 0 450 300;" xml:space="preserve">
             <style type="text/css">
@@ -76,8 +80,10 @@
 
     </div>
 
-    <div id="pcs" class="drawer" style="display:none;">
-        <button id="backPCS" class="backToBox">Back</button>
+    <div id="pcs" style="display:none;">
+        <div class="buttonBox">
+            <button id="backPCS" class="backToBox">Back</button>
+        </div>
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
             x="0px" y="0px" viewBox="0 0 1685 1124.5" style="enable-background:new 0 0 1685 1124.5;"
             xml:space="preserve">
@@ -188,7 +194,9 @@
     </div>
 
     <div id="gs" style="display:none;">
-        <button id="backGS" class="backToBox">Back</button>
+        <div class="buttonBox">
+            <button id="backGS" class="backToBox">Back</button>
+        </div>
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
             x="0px" y="0px" viewBox="0 0 2667.92 1968.76" style="enable-background:new 0 0 2667.92 1968.76;"
             xml:space="preserve">
@@ -214,10 +222,11 @@
     </div>
 
     <div id="ppe" style="display:none;">
-        <button id="backPPE" class="backToBox">Back</button>
+        <div class="buttonBox">
+            <button id="backPPE" class="backToBox">Back</button>
+        </div>
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            viewBox="0 0 2565.88 1871.54" style="enable-background:new 0 0 2565.88 1871.54;"
-            xml:space="preserve">
+            viewBox="0 0 2565.88 1871.54" style="enable-background:new 0 0 2565.88 1871.54;" xml:space="preserve">
             <image style="overflow:visible;" width="2567" height="1872" xlink:href="./images/ppeBack.jpg"
                 transform="matrix(1 0 0 1 -0.3966 -0.141)">
             </image>
@@ -240,7 +249,9 @@
     </div>
 
     <div id="sw" style="display:none;">
-        <button id="backSW" class="backToBox">Back</button>
+        <div class="buttonBox">
+            <button id="backSW" class="backToBox">Back</button>
+        </div>
         <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
             x="0px" y="0px" viewBox="0 0 1584 1152" style="enable-background:new 0 0 1584 1152;" xml:space="preserve">
             <image style="overflow:visible;" width="3303" height="2401" xlink:href="./images/swBack.jpg"
@@ -399,7 +410,9 @@
     </div>
 
     <div id="ct" style="display:none;">
-        <button id="backCT" class="backToBox">Back</button>
+        <div class="buttonBox">
+            <button id="backCT" class="backToBox">Back</button>
+        </div>
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
             x="0px" y="0px" viewBox="0 0 1282.47 928.53" style="enable-background:new 0 0 1282.47 928.53;"
             xml:space="preserve">
@@ -421,7 +434,9 @@
     </div>
 
     <div id="hms" style="display:none;">
-        <button id="backHMS" class="backToBox">Back</button>
+        <div class="buttonBox">
+            <button id="backHMS" class="backToBox">Back</button>
+        </div>
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             viewBox="0 0 1602 1188" style="enable-background:new 0 0 1602 1188;" xml:space="preserve">
             <image style="overflow:visible;" width="3337" height="2475" id="hmsBack" xlink:href="./images/hmsBack.jpg"
@@ -473,7 +488,9 @@
     </div>
 
     <div id="et" style="display:none;">
-        <button id="backET" class="backToBox">Back</button>
+        <div class="buttonBox">
+            <button id="backET" class="backToBox">Back</button>
+        </div>
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             viewBox="0 0 1602 1188" style="enable-background:new 0 0 1602 1188;" xml:space="preserve">
             <image style="overflow:visible;" width="3337" height="2475" id="etLocal" xlink:href="./images/etBack.jpg"
@@ -522,7 +539,9 @@
     </div>
 
     <div id="mt" style="display:none;">
-        <button id="backMT" class="backToBox">Back</button>
+        <div class="buttonBox">
+            <button id="backMT" class="backToBox">Back</button>
+        </div>
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             viewBox="0 0 3048.57 2169.36" style="enable-background:new 0 0 3048.57 2169.36;" xml:space="preserve">
             <g id="Layer_1">
@@ -585,7 +604,9 @@
     </div>
 
     <div id="clamps" style="display:none;">
-        <button id="backClamps" class="backToBox">Back</button>
+        <div class="buttonBox">
+            <button id="backClamps" class="backToBox">Back</button>
+        </div>
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
             x="0px" y="0px" viewBox="0 0 3217.75 2282.7" style="enable-background:new 0 0 3217.75 2282.7;"
             xml:space="preserve">
@@ -632,7 +653,9 @@
     </div>
 
     <div id="st" style="display:none;">
-        <button id="backST" class="backToBox">Back</button>
+        <div class="buttonBox">
+            <button id="backST" class="backToBox">Back</button>
+        </div>
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             viewBox="0 0 3666 1701" style="enable-background:new 0 0 3666 1701;" xml:space="preserve">
             <g id="Layer_1">
@@ -695,7 +718,7 @@
         border: 1px solid #666;
         border-radius: 4px;
         padding: 4px;
-        margin: 4px 0px;
+        height: fit-content;
     }
 
     :root {
@@ -703,15 +726,98 @@
         color-scheme: dark;
         text-rendering: optimizeLegibility;
     }
-    .home {
+
+    #home {
         text-align: center;
+        flex-direction: column;
+        margin-bottom: 10vh;
     }
-    #overview, #pcs, #sw, #gs, #mt, #clamps, #hms, #et, #st, #ct, #ppe {
+
+    #overview,
+    #pcs,
+    #sw,
+    #gs,
+    #mt,
+    #clamps,
+    #hms,
+    #et,
+    #st,
+    #ct,
+    #ppe {
+        display: flex;
         width: 90vw;
         height: 90vh;
     }
+
     svg {
         width: auto;
         border: .5vh solid white;
+    }
+
+    .buttonBox {
+        display: flex;
+    }
+
+    .buttonBoxHome {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .buttonBoxHome button {
+        margin: 0 8px;
+    }
+
+    @media (max-width: 700px) {
+
+        /* collapsed menu */
+        #overview,
+        #pcs,
+        #sw,
+        #gs,
+        #mt,
+        #clamps,
+        #hms,
+        #et,
+        #st,
+        #ct,
+        #ppe {
+            flex-direction: column;
+        }
+
+        button {
+            margin: 0px 8px 8px 0px;
+        }
+
+        .buttonBox {
+            flex-direction: row;
+        }
+    }
+
+    @media (min-width: 700px) {
+
+        /* open menu */
+        #overview,
+        #pcs,
+        #sw,
+        #gs,
+        #mt,
+        #clamps,
+        #hms,
+        #et,
+        #st,
+        #ct,
+        #ppe {
+            flex-direction: row;
+            align-items: center;
+        }
+
+        button {
+            margin: 4px 8px 4px 0px;
+        }
+
+        .buttonBox {
+            flex-direction: column;
+            width: 86px;
+        }
     }
 </style>
