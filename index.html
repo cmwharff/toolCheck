@@ -76,10 +76,10 @@
 
     </div>
 
-    <div id="pcs" style="display:none;">
+    <div id="pcs" class="drawer" style="display:none;">
         <button id="backPCS" class="backToBox">Back</button>
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-            x="0px" y="0px" viewBox="0 0 1685 1124.5" style="enable-background:new 0 0 1685 1124.5; height: 90vh;"
+            x="0px" y="0px" viewBox="0 0 1685 1124.5" style="enable-background:new 0 0 1685 1124.5;"
             xml:space="preserve">
             <style type="text/css">
                 .st0 {
@@ -216,7 +216,7 @@
     <div id="ppe" style="display:none;">
         <button id="backPPE" class="backToBox">Back</button>
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            viewBox="0 0 2565.88 1871.54" style="enable-background:new 0 0 2565.88 1871.54; height: 90vh"
+            viewBox="0 0 2565.88 1871.54" style="enable-background:new 0 0 2565.88 1871.54;"
             xml:space="preserve">
             <image style="overflow:visible;" width="2567" height="1872" xlink:href="./images/ppeBack.jpg"
                 transform="matrix(1 0 0 1 -0.3966 -0.141)">
@@ -695,6 +695,7 @@
         border: 1px solid #666;
         border-radius: 4px;
         padding: 4px;
+        margin: 4px 0px;
     }
 
     :root {
@@ -704,5 +705,13 @@
     }
     .home {
         text-align: center;
+    }
+    #overview, #pcs, #sw, #gs, #mt, #clamps, #hms, #et, #st, #ct, #ppe {
+        width: 90vw;
+        height: 90vh;
+    }
+    svg {
+        width: auto;
+        border: .5vh solid white;
     }
 </style>
