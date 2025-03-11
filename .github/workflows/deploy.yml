@@ -19,7 +19,6 @@ jobs:
       url: ${{ steps.deploy_to_pages.outputs.github_pages_url }}
     steps:
       - name: ToolCheck
-        uses: actions/toolCheck@v3
       - name: Vite Github Pages Deployer
         uses: skywarth/vite-github-pages-deployer@v1.4.0
         id: deploy_to_pages
