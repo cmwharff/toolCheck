@@ -61,12 +61,12 @@ button {
 #ct,
 #ppe {
     display: flex;
-    width: 90vw;
+    width: 95vw;
     height: 90vh;
 }
 
 svg {
-    width: auto;
+    width: 100vw;
     border: .5vh solid white;
 }
 
