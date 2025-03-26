@@ -53,11 +53,11 @@ async function loadItemStatus(drawer) {
     });
 }
 
-async function goHome() {
-    if (confirm("If changes have been made please submit before returning to the front page")) {
-        setPage('home');
-    }
-}
+// async function goHome() {
+//     if (confirm("If changes have been made please submit before returning to the front page")) {
+//         setPage('home');
+//     }
+// }
 
 export async function toggleItem(drawer, item) {
     console.log("item clicked")
@@ -108,7 +108,7 @@ export async function logTools() {
 
 document.getElementById('loadBoxPage').onclick = loadBoxPage;
 document.getElementById('logTools').onclick = logTools;
-document.getElementById('goHome').onclick = goHome;
+// document.getElementById('goHome').onclick = goHome;
 window.onload = function () {
     const items = document.getElementsByClassName('tool');
     const drawers = document.getElementsByClassName('drawerButton');
