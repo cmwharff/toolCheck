@@ -71,7 +71,7 @@ export async function toggleItem(drawer, item) {
 
 export async function logTools() {
     const dbRef = ref(database);
-    const timestamp = Date.now();
+    const timestamp = new Date(Date.now());
     await get(child(dbRef, `tables/${tableNum}/`)).then((snap1) => {
         if (snap1.exists()) {
             snap1.forEach((childSnap1) => {
@@ -82,8 +82,18 @@ export async function logTools() {
                             const item = childSnapshot.key;
                             const present = childSnapshot.val().present;
                             if (present !== "true") {
-                                set(ref(database, `tables/${tableNum}/${drawer}/${item}/missingLog/${timestamp}`), `${timestamp.UTC}`);
-                                runTransaction(ref(database, `tables/${tableNum}/${drawer}/${item}/count`), (current) => {
+                                set(ref(database, `tables/${tableNum}/${drawer}/${item}/missingLog/${timestamp}`), timestamp.toISOString());
+                                runTransaction(ref(database, `tables/${tableNum}/${drawer}/${item}/missingOccurences`), (current) => {
+                                    if (current === undefined) {
+                                        current = 1;
+                                    } else {
+                                        current++;
+                                    }
+                                    return current;
+                                });
+                            } else {
+                                set(ref(database, `tables/${tableNum}/${drawer}/${item}/presentLog/${timestamp}`), timestamp.toISOString());
+                                runTransaction(ref(database, `tables/${tableNum}/${drawer}/${item}/presentOccurences`), (current) => {
                                     if (current === undefined) {
                                         current = 1;
                                     } else {
