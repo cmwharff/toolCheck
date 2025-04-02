@@ -82,7 +82,7 @@ export async function logTools() {
                             const item = childSnapshot.key;
                             const present = childSnapshot.val().present;
                             if (present !== "true") {
-                                set(ref(database, `tables/${tableNum}/${drawer}/${item}/missingLog/${timestamp}`), timestamp.UTC);
+                                set(ref(database, `tables/${tableNum}/${drawer}/${item}/missingLog/${timestamp}`), `${timestamp.UTC}`);
                                 runTransaction(ref(database, `tables/${tableNum}/${drawer}/${item}/count`), (current) => {
                                     if (current === undefined) {
                                         current = 1;
