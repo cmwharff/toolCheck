@@ -12,14 +12,16 @@ import { getDatabase } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-d
 
 const firebaseConfig = {
 
-  apiKey: "AIzaSyBJNd-BG9NMcNalL9jGZQs98b5Df8bePB4",
-  authDomain: "tools-15b94.firebaseapp.com",
-  projectId: "tools-15b94",
-  storageBucket: "tools-15b94.firebasestorage.app",
-  messagingSenderId: "995695894631",
-  appId: "1:995695894631:web:2824131299ef4e0ffe74c2"
+  apiKey: "AIzaSyBAMDAGYHNMtPaXAwJl-BRvxvl37E7Z3xE",
+  authDomain: "engr-enes100tool-inv-firebase.firebaseapp.com",
+  databaseURL: "https://engr-enes100tool-inv-firebase-velma.firebaseio.com",
+  projectId: "engr-enes100tool-inv-firebase",
+  storageBucket: "engr-enes100tool-inv-firebase.appspot.com",
+  messagingSenderId: "763916402491",
+  appId: "1:763916402491:web:e598de3c258f7d4faa811e"
 
 };
+
 
 
 // Initialize Firebase
